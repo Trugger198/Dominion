@@ -657,7 +657,7 @@ void councilRoomCard(int currentPlayer, int handPos, struct gameState *state){
       //Each other player draws a card
       for (i = 0; i < state->numPlayers; i++)
 	{
-	  if ( i != currentPlayer )
+	  if ( i == currentPlayer )
 	    {
 	      drawCard(i, state);
 	    }
@@ -699,7 +699,7 @@ int remodelCard(int currentPlayer, int choice1, int choice2, int handPos, struct
 int smithyCard(int currentPlayer, int handPos, struct gameState *state){
 	int i;
 	//+3 Cards
-        for (i = 0; i < 3; i++)
+        for (i = 0; i <= 3; i++)
 	   {
 	    drawCard(currentPlayer, state);
 	   }
