@@ -1,0 +1,1 @@
+Pulled great hall, village, remodel, and council room cards out of switch statements and into their own functions.
